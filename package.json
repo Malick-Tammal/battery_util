@@ -1,0 +1,16 @@
+{
+  "name": "battery_js",
+  "version": "1.0.0",
+  "description": "Getting battery details with nodeJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "malick tammal",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "systeminformation": "^5.22.5"
+  }
+}
