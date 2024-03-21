@@ -19,9 +19,9 @@
 ## 1 - 📖 How it works
 
 With the help of [Child Process](https://www.npmjs.com/package/childprocess) package
-we can execute a powershell script and return data from it , and with using [System Information](https://www.npmjs.com/package/systeminformation) we can get more info about the battery
+we can execute a powershell script and return data from it (Microsoft battery report) , and with using [System Information](https://www.npmjs.com/package/systeminformation) we can get more info about the battery
 
-> importing child process and systeminformation
+> Importing child process and systeminformation
 
 ```js
 import { exec } from "child_process";
@@ -78,10 +78,24 @@ npm install
 npm start
 ```
 
+> ✨ Do your magic
+
+## 3 - 💻 OS Support
+
+Now is only working with windows but in future and with your help we will implement other operating systems
+
+## 4 - 💽 Softwares that implementing the script
+
+**1. [ENERGIZE](https://github.com/ADAMSKI-DZ/ENERGIZE)**
+
+**1. [Laptop Tester](https://github.com/ADAMSKI-DZ/Laptop-Tester)**
+
 # Say thank you if this is helpful 🌟🌟
 
-The script style is in early stages (beta)
-feel free to contribute
+The script is in early stages (beta) steel hase bugs
+, feel free to contribute
+
+## Don't forget to star the repository ❤️❤️
 
 ## Contact me 📭
 
