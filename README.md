@@ -1,6 +1,6 @@
 # 🔋Battery_JS
 
-# Steal on early stages (didn't publish to npm)
+# Still on early stages (didn't publish to npm)
 
 ### Get battery details with NodeJS
 
