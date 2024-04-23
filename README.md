@@ -1,5 +1,7 @@
 # 🔋Battery_JS
 
+# Steal on early stages (didn't publish to npm)
+
 ### Get battery details with NodeJS
 
 **📋 Returned data :**
@@ -63,7 +65,7 @@ execute(
 > Clone the repository
 
 ```BASH
-git clone https://github.com/ADAMSKI-DZ/Battery_JS.git
+git clone https://github.com/Malick-Tammal/Battery_JS.git
 ```
 
 > Install npm packages
@@ -86,13 +88,13 @@ Now is only working with windows but in future and with your help we will implem
 
 ## 4 - 💽 Softwares that implementing the script
 
-**1. [ENERGIZE](https://github.com/ADAMSKI-DZ/ENERGIZE)**
+**1. [ENERGIZE](https://github.com/Malick-Tammal/ENERGIZE)**
 
-**1. [Laptop Tester](https://github.com/ADAMSKI-DZ/Laptop-Tester)**
+**1. [Laptop Tester](https://github.com/Malick-Tammal/Laptop-Tester)**
 
 # Say thank you if this is helpful 🌟🌟
 
-The script is in early stages (beta) steel hase bugs
+The script is in early stages (beta) still has some bugs
 , feel free to contribute
 
 ## Don't forget to star the repository ❤️❤️
