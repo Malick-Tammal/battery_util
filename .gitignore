@@ -1,2 +1,2 @@
-node_modules
-battery_ps/batteryreport.xml
+test/ps_script/batteryreport.xml
+lib/ps_script/batteryreport.xml
