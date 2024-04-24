@@ -16,6 +16,17 @@
   "os": [
     "win32"
   ],
+  "keywords": [
+    "battery_js",
+    "battery",
+    "battery-level",
+    "battery-life",
+    "battery-monitor",
+    "battery-health",
+    "health",
+    "laptop",
+    "laptop-battery"
+  ],
   "author": "Malick Tammal",
   "license": "MIT"
 }
