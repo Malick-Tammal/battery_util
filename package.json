@@ -1,7 +1,7 @@
 {
   "name": "battery_js",
   "version": "1.0.0",
-  "description": "Laptop Battery Information for nodeJS",
+  "description": "Battery js get battery information for nodeJS",
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./test/test.js"
