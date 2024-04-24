@@ -1,5 +1,5 @@
 {
-  "name": "battery_js",
+  "name": "@malick_tammal/battery_js",
   "version": "1.0.0",
   "description": "Battery js get battery information for nodeJS",
   "main": "./lib/index.js",

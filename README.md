@@ -45,13 +45,13 @@
 ## Install
 
 ```sh
-npm i battery_js --save
+npm i @malick_tammal/battery_js --save
 ```
 
 or
 
 ```sh
-npm i battery_js
+npm i @malick_tammal/battery_js
 ```
 
 ## Usage
