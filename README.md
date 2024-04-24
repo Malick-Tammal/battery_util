@@ -1,36 +1,127 @@
-# 🔋Battery_JS
+<h1 align="center">🔋Battery_JS</h1>
 
-# Still on early stages (didn't publish to npm)
+<p align="center">
+<a href="https://github.com/Malick-Tammal/battery_js/graphs/contributors" target="_blank">
+  <img alt="Contributors" src="https://img.shields.io/github/contributors/Malick-Tammal/battery_js.svg?style=for-the-badge">
+</a>
+<a href="https://github.com/Malick-Tammal/battery_js/stargazers" target="_blank">
+  <img alt="Stargazers" src="https://img.shields.io/github/stars/Malick-Tammal/battery_js.svg?style=for-the-badge">
+</a>
+<a href="https://github.com/Malick-Tammal/battery_js/issues" target="_blank">
+  <img alt="Issues" src="https://img.shields.io/github/issues/Malick-Tammal/battery_js.svg?style=for-the-badge">
+</a>
+<a href="https://github.com/Malick-Tammal/battery_js/blob/main/LICENSE" target="_blank">
+  <img alt="License" src="https://img.shields.io/github/license/Malick-Tammal/battery_js.svg?style=for-the-badge">
+</a>
+</p>
 
-### Get battery details with NodeJS
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Malick-Tammal/battery_js/blob/main/README.md" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+    <a href="https://github.com/Malick-Tammal/battery_js/graphs/commit-activity" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
 
-**📋 Returned data :**
+> Battery js get laptop battery information (health , capacity , serial number .....)
 
-- Design Capacity
-- Full Charge Capacity
-- Battery Health
-- Cycle Count
-- Battery ID
-- Serial Number
-- Battery Model
+## 🌟 Features
 
-### 🎬 Some screenshots
+- Get battery health (Accurate reads)
+- Get battery information (serialNumber , batteryId ..)
+- Lightweight and reliable
 
-![Screen_Shot1](images/Screen_Shot1.PNG)
+## 🚀 Features will added
 
-## 1 - 📖 How it works
+- Cross platform support
+- Getting laptop model
+- Getting Battery Model
+- Battery realtime level
+- Estimated time for full charge
+- Estimated time to fully discharge
 
-With the help of [Child Process](https://www.npmjs.com/package/childprocess) package
-we can execute a powershell script and return data from it (Microsoft battery report) , and with using [System Information](https://www.npmjs.com/package/systeminformation) we can get more info about the battery
+## Install
 
-> Importing child process and systeminformation
+```sh
+npm i battery_js --save
+```
+
+or
+
+```sh
+npm i battery_js
+```
+
+## Usage
+
+import the package
+
+```js
+const battery = require("battery_js");
+```
+
+get battery information
+
+```js
+const battery = require("battery_js");
+
+battery
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+// output Example
+// fileSavedPath (battery report)
+// measureUnit : "mWh"
+// designCapacity : 60800
+// fullChargeCapacity : 60800
+// batteryHealth : 100%
+// cycleCount : 0
+// batteryId : DELL 9GRYT8A
+// serialNumber : 204
+```
+
+get specific data
+
+```js
+const battery = require("battery_js");
+
+battery
+  .then((data) => {
+    console.log(data.fullChargeCapacity); // 60800
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+### data options :
+
+- fileSavedPath
+- measureUnit
+- designCapacity
+- fullChargeCapacity
+- cycleCount
+- batteryId
+- serialNumber
+- more in the future ....
+
+## 📖 How it works
+
+With the help of [Child Process](https://www.npmjs.com/package/childprocess) package we can execute a powershell script and return data from it (Microsoft battery report)
+
+> Importing child process
 
 ```js
 import { exec } from "child_process";
-import { battery } from "systeminformation";
 ```
 
-> Execute function
+> Function to execute a cmd commends (scripts)
 
 ```js
 const execute = (command, callback) => {
@@ -47,15 +138,15 @@ execute(
   "powershell -executionpolicy bypass -File ./battery_ps/get_battery_health.PS1",
   (output) => {
     console.log(output);
-    // output (Example)
-    // Battery life report saved path
-    // Design Capacity : 60800mWh
-    // Full Charge Capacity : 60800mWh
-    // Battery Health : 100%
-    // Cycle Count : 0
-    // Battery ID : DELL 9GRYT8A
-    // Serial Number : 204
-    // Battery Model : 204BYDDELL 9GRYT8A
+    // output Example
+    // fileSavedPath (battery report)
+    // measureUnit : "mWh"
+    // designCapacity : 60800
+    // fullChargeCapacity : 60800
+    // batteryHealth : 100%
+    // cycleCount : 0
+    // batteryId : DELL 9GRYT8A
+    // serialNumber : 204
   }
 );
 ```
@@ -64,43 +155,46 @@ execute(
 
 > Clone the repository
 
-```BASH
-git clone https://github.com/Malick-Tammal/Battery_JS.git
+```sh
+git clone https://github.com/Malick-Tammal/battery_js.git
+```
+```sh
+cd battery_js
+```
+package folder for (npm package) / test folder for (testing)
+
+> Start CLI interface
+
+```sh
+npm test
 ```
 
-> Install npm packages
+## ❗ Issues
 
-```BASH
-npm install
-```
+- Only working in windows systems
+- if you find issue please open new [issue](https://github.com/Malick-Tammal/battery_js/issues/new)
 
-> Start the app with
+## 🖋️ Author
 
-```BASH
-npm start
-```
+🧑🏽 **Malick Tammal**
 
-> ✨ Do your magic
+- Website: http://malicktammal.netlify.app/
+- Github: [@Malick-Tammal](https://github.com/Malick-Tammal)
+- Instagram [@Malick_Tammal](https://www.instagram.com/malick_tammal/)
+- Youtube [Malick_Tammal](https://www.youtube.com/channel/UCmLTg0TBizTda3dpSObkA2w)
 
-## 3 - 💻 OS Support
+## 🤝 Contributing
 
-Now is only working with windows but in future and with your help we will implement other operating systems
+Contributions, issues and feature requests are welcome!
 
-## 4 - 💽 Softwares that implementing the script
+Feel free to check [issues page](https://github.com/Malick-Tammal/battery_js/issues).
 
-**1. [ENERGIZE](https://github.com/Malick-Tammal/ENERGIZE)**
+## 🔥 Show your support
 
-**1. [Laptop Tester](https://github.com/Malick-Tammal/Laptop-Tester)**
+Give a ⭐️ if this project helped you!
 
-# Say thank you if this is helpful 🌟🌟
+## 📜 License
 
-The script is in early stages (beta) still has some bugs
-, feel free to contribute
+Copyright © 2024 [Malick Tammal](https://github.com/Malick-Tammal). All rights reserved.
 
-## Don't forget to star the repository ❤️❤️
-
-## Contact me 📭
-
-[![Facebook](https://cdn-icons-png.flaticon.com/32/733/733547.png)](https://www.facebook.com/profile.php?id=100092494246970)&emsp;&emsp;
-[![Instagram](https://cdn-icons-png.flaticon.com/32/2111/2111463.png)](https://www.instagram.com/malick_tammal)&emsp;&emsp;
-[![Codepen](https://cdn-icons-png.flaticon.com/32/2504/2504911.png)](https://codepen.io/ADAMSKIDZ)
+Licensed under the [MIT license](https://github.com/Malick-Tammal/battery_js/blob/master/LICENSE).
