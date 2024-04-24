@@ -1,6 +1,6 @@
 # Changelog
 
-## Major - Version 1
+## Major release - Version 1
 
 > initial release
 
@@ -10,7 +10,7 @@
 - Get battery information (serialNumber , batteryId ..)
 - Lightweight and reliable
 
-## All version
+## All version (history)
 
 | Version | Date      | Comment         |
 | ------- | --------- | --------------- |
