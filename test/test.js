@@ -16,8 +16,14 @@ const getBatteryData = () => {
   console.log("Gathering Data ...");
 
   // Execute ps script
-  execute(psCommend, (output) => {
-    arrangeData(output);
+  execute(psCommend, (output, error) => {
+    if (output.includes("DesignCapacity")) {
+      arrangeData(output);
+    } else {
+      console.log(
+        `Error occurred while executing Powershell script.\n ${error}`
+      );
+    }
   });
 
   // Arranging data (battery info) and logging it
