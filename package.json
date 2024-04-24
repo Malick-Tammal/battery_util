@@ -1,7 +1,7 @@
 {
   "name": "battery_js",
   "version": "1.0.0",
-  "description": "Battery Information for nodeJS",
+  "description": "Laptop Battery Information for nodeJS",
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./test/test.js"
@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/Malick-Tammal/battery_js.git"
   },
+  "os": [
+    "win32"
+  ],
   "author": "Malick Tammal",
   "license": "MIT"
 }
