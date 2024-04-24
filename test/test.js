@@ -40,6 +40,7 @@ const getBatteryData = () => {
       "fullChargeCapacity",
       ":"
     );
+    const health = `${calcBatteryHealth(fullChargeCapacity, designCapacity)}%`;
     const cycleCount = util.getValue(dataSplitted, "cycleCount", ":");
     const batteryId = util.getValue(dataSplitted, "id", ":");
     const serialNumber = util.getValue(dataSplitted, "serialNumber", ":");
@@ -49,6 +50,7 @@ const getBatteryData = () => {
       measureUnit: measureUnit,
       designCapacity: designCapacity,
       fullChargeCapacity: fullChargeCapacity,
+      health: health,
       cycleCount: cycleCount,
       batteryId: batteryId,
       serialNumber: serialNumber,
