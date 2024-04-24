@@ -59,13 +59,13 @@ npm i @malick_tammal/battery_js
 import the package
 
 ```js
-const battery = require("battery_js");
+const battery = require("@malick_tammal/battery_js");
 ```
 
 get battery information
 
 ```js
-const battery = require("battery_js");
+const battery = require("@malick_tammal/battery_js");
 
 battery
   .then((data) => {
@@ -144,12 +144,27 @@ execute(
     // measureUnit : "mWh"
     // designCapacity : 60800
     // fullChargeCapacity : 60800
-    // health : 100%
     // cycleCount : 0
     // id : DELL 9GRYT8A
     // serialNumber : 204
   }
 );
+```
+
+> Calculating battery health
+
+```js
+const calcBatteryHealth = (fChargeC, designC) => {
+  let batteryHealth = Math.round((fChargeC / designC) * 100);
+  return batteryHealth;
+};
+```
+
+usage :
+
+```js
+const health = `${calcBatteryHealth(fullChargeCapacity, designCapacity)}%`;
+// 100%
 ```
 
 ## 2 - ▶️ Getting Started
@@ -159,9 +174,11 @@ execute(
 ```sh
 git clone https://github.com/Malick-Tammal/battery_js.git
 ```
+
 ```sh
 cd battery_js
 ```
+
 package folder for (npm package) / test folder for (testing)
 
 > Start CLI interface
