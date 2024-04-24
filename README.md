@@ -80,9 +80,9 @@ battery
 // measureUnit : "mWh"
 // designCapacity : 60800
 // fullChargeCapacity : 60800
-// batteryHealth : 100%
+// health : 100%
 // cycleCount : 0
-// batteryId : DELL 9GRYT8A
+// id : DELL 9GRYT8A
 // serialNumber : 204
 ```
 
@@ -106,8 +106,9 @@ battery
 - measureUnit
 - designCapacity
 - fullChargeCapacity
+- health
 - cycleCount
-- batteryId
+- id
 - serialNumber
 - more in the future ....
 
@@ -143,9 +144,9 @@ execute(
     // measureUnit : "mWh"
     // designCapacity : 60800
     // fullChargeCapacity : 60800
-    // batteryHealth : 100%
+    // health : 100%
     // cycleCount : 0
-    // batteryId : DELL 9GRYT8A
+    // id : DELL 9GRYT8A
     // serialNumber : 204
   }
 );
