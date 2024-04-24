@@ -89,7 +89,7 @@ battery
 get specific data
 
 ```js
-const battery = require("battery_js");
+const battery = require("@malick_tammal/battery_js");
 
 battery
   .then((data) => {
