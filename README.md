@@ -139,7 +139,7 @@ execute(
   "powershell -executionpolicy bypass -File ./battery_ps/get_battery_health.PS1",
   (output) => {
     console.log(output);
-    // output Example
+    // output (Example)
     // fileSavedPath (battery report)
     // measureUnit : "mWh"
     // designCapacity : 60800
@@ -164,7 +164,7 @@ usage :
 
 ```js
 const health = `${calcBatteryHealth(fullChargeCapacity, designCapacity)}%`;
-// 100%
+// (Example) 100%
 ```
 
 ## 2 - ▶️ Getting Started
