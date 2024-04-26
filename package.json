@@ -2,7 +2,8 @@
   "name": "@malick_tammal/battery_js",
   "version": "1.0.0",
   "description": "Battery js get battery information for nodeJS",
-  "main": "./lib/index.js",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "node ./test/test.js"
   },
