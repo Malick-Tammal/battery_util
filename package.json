@@ -1,6 +1,6 @@
 {
   "name": "battery_util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "nodeJS package to get information about laptop battery",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
