@@ -1,9 +1,9 @@
 {
   "name": "battery_util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodeJS package to get information about laptop battery",
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "bin": {
     "battery_util": "lib/cli.js"
   },
@@ -22,7 +22,7 @@
     "win32"
   ],
   "keywords": [
-    "battery_js",
+    "battery_util",
     "battery",
     "battery-level",
     "battery-life",
