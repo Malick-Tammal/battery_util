@@ -1,7 +1,7 @@
 # Creating windows battery report then getting data from it
-powercfg /batteryreport /XML /OUTPUT "./node_modules/battery_js/lib/ps_script/batteryreport.xml"
+powercfg /batteryreport /XML /OUTPUT "./node_modules/battery_util/lib/ps_script/batteryreport.xml"
 Start-Sleep 1
-[xml]$b = Get-Content "./node_modules/battery_js/lib/ps_script/batteryreport.xml"
+[xml]$b = Get-Content "./node_modules/battery_util/lib/ps_script/batteryreport.xml"
 
 $b.BatteryReport.Batteries | ForEach-Object {
     [PSCustomObject]@{

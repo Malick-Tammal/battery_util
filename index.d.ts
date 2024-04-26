@@ -1,4 +1,7 @@
-export namespace battery_js {
+// Code snippet for battery_util
+
+export namespace battery_util {
+    // 1. Battery Data
     interface BatteryData {
         fileSavedPath: string,
         measureUnit: string
@@ -11,4 +14,4 @@ export namespace battery_js {
     }
 }
 
-export function batteryData(cb?: (data: battery_js.BatteryData) => any): Promise<battery_js.BatteryData>;
+export function batteryData(cb?: (data: battery_util.BatteryData) => any): Promise<battery_util.BatteryData>;

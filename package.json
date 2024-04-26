@@ -1,7 +1,7 @@
 {
-  "name": "@malick_tammal/battery_js",
+  "name": "battery_util",
   "version": "1.0.0",
-  "description": "Battery js get battery information for nodeJS",
+  "description": "nodeJS package to get information about laptop battery",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Malick-Tammal/battery_js.git"
+    "url": "https://github.com/Malick-Tammal/battery_util.git"
   },
   "os": [
     "win32"
