@@ -4,6 +4,9 @@
   "description": "nodeJS package to get information about laptop battery",
   "main": "./index.js",
   "types": "./index.d.ts",
+  "bin": {
+    "battery_util": "lib/cli.js"
+  },
   "scripts": {
     "test": "node ./test/test.js",
     "cli": "node ./lib/cli.js"

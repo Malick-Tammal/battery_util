@@ -1,2 +1,3 @@
 test/ps_script/batteryreport.xml
 lib/ps_script/batteryreport.xml
+.npmignore
