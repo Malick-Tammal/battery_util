@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/Malick-Tammal/battery_util/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -30,7 +30,7 @@
 ## 🌟 Features
 
 - Get battery health (Accurate reads)
-- Get battery information (serialNumber , batteryId ..)
+- Get battery information (Serial number , Battery id , Capacity ..)
 - Lightweight and reliable
 
 ## 🚀 Features will added
