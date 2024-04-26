@@ -1,7 +1,7 @@
 # Creating windows battery report then getting data from it
-powercfg /batteryreport /XML /OUTPUT "./test/ps_script/batteryreport.xml"
+powercfg /batteryreport /XML /OUTPUT "./lib/ps_script/batteryreport.xml"
 Start-Sleep 1
-[xml]$b = Get-Content "./test/ps_script/batteryreport.xml"
+[xml]$b = Get-Content "./lib/ps_script/batteryreport.xml"
 
 $b.BatteryReport.Batteries | ForEach-Object {
     [PSCustomObject]@{

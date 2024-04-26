@@ -5,7 +5,8 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "node ./test/test.js",
+    "cli": "node ./lib/cli.js"
   },
   "files": [
     "lib/"
