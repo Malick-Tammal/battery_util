@@ -1,26 +1,44 @@
 <h1 align="center">🔋battery_util</h1>
 
 <p align="center">
-<a href="https://github.com/Malick-Tammal/battery_util/graphs/contributors" target="_blank">
-  <img alt="Contributors" src="https://img.shields.io/github/contributors/Malick-Tammal/battery_util.svg?style=for-the-badge">
-</a>
-<a href="https://github.com/Malick-Tammal/battery_util/stargazers" target="_blank">
-  <img alt="Stargazers" src="https://img.shields.io/github/stars/Malick-Tammal/battery_util.svg?style=for-the-badge">
-</a>
-<a href="https://github.com/Malick-Tammal/battery_util/issues" target="_blank">
-  <img alt="Issues" src="https://img.shields.io/github/issues/Malick-Tammal/battery_util.svg?style=for-the-badge">
-</a>
-<a href="https://github.com/Malick-Tammal/battery_util/blob/main/LICENSE" target="_blank">
-  <img alt="License" src="https://img.shields.io/github/license/Malick-Tammal/battery_util.svg?style=for-the-badge">
-</a>
+  <a href="https://github.com/Malick-Tammal/battery_util/blob/main/CHANGELOG.md" target="_blank">Changelog<a>
+  -
+  <a href="https://github.com/Malick-Tammal/battery_util/issues/new">Request feature<a>
+  -
+  <a href="https://github.com/Malick-Tammal/battery_util/issues/new">Report bug<a>
+</p>
+
+---
+
+<p align="center">
+  <a href="https://github.com/Malick-Tammal/battery_util/graphs/contributors" target="_blank">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/Malick-Tammal/battery_util.svg?style=for-the-badge">
+  </a>
+  <a href="https://github.com/Malick-Tammal/battery_util/stargazers" target="_blank">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/Malick-Tammal/battery_util.svg?style=for-the-badge">
+  </a>
+  <a href="https://github.com/Malick-Tammal/battery_util/issues" target="_blank">
+    <img alt="Issues" src="https://img.shields.io/github/issues/Malick-Tammal/battery_util.svg?style=for-the-badge">
+  </a>
+  <a href="https://github.com/Malick-Tammal/battery_util/blob/main/LICENSE" target="_blank">
+    <img alt="License" src="https://img.shields.io/github/license/Malick-Tammal/battery_util.svg?style=for-the-badge">
+  </a>
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Malick-Tammal/battery_util/releases" target="_blank">
+    <img alt="GIT Version" src="https://img.shields.io/github/v/release/Malick-Tammal/battery_util" />
+  </a>
+  <a href="https://www.npmjs.com/package/battery_util" target="_blank">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/battery_util" />
+  </a>
+    <a href="https://github.com/Malick-Tammal" target="_blank">
+    <img alt="NPM Version" src="https://img.shields.io/badge/caretaker-malick--tammal-blue.svg?style=flat-square" />
+  </a>
   <a href="https://github.com/Malick-Tammal/battery_util/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-    <a href="https://github.com/Malick-Tammal/battery_util/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/Malick-Tammal/battery_util/graphs/commit-activity" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
 </p>
@@ -200,10 +218,10 @@ npm test
 
 🧑🏽 **Malick Tammal**
 
-- Website: http://malicktammal.netlify.app/
+- Website: [Portfolio](http://malicktammal.netlify.app/)
 - Github: [@Malick-Tammal](https://github.com/Malick-Tammal)
 - Instagram [@Malick_Tammal](https://www.instagram.com/malick_tammal/)
-- Youtube [Malick_Tammal](https://www.youtube.com/channel/UCmLTg0TBizTda3dpSObkA2w)
+- Youtube [@Malick_Tammal](https://www.youtube.com/channel/UCmLTg0TBizTda3dpSObkA2w)
 
 ## 🤝 Contributing
 
