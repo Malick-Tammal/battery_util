@@ -1,3 +1,2 @@
-lib/ps_script/batteryreport.xml
 .npmignore
-.prettierignore
+batteryreport.xml
