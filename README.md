@@ -86,10 +86,10 @@ get battery information
 const bu = require("battery_util");
 
 bu.batteryData()
-  .then((data) => {
+  .then(data => {
     console.log(data);
   })
-  .catch((err) => {
+  .catch(err => {
     console.log(err);
   });
 
@@ -110,10 +110,10 @@ get specific data
 const bu = require("battery_util");
 
 bu.batteryData()
-  .then((data) => {
+  .then(data => {
     console.log(data.fullChargeCapacity); //(Example) 60800
   })
-  .catch((err) => {
+  .catch(err => {
     console.log(err);
   });
 ```
