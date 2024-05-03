@@ -85,7 +85,7 @@ get battery information
 ```js
 const bu = require("battery_util");
 
-bu.battery()
+bu.batteryData()
   .then((data) => {
     console.log(data);
   })
@@ -109,7 +109,7 @@ get specific data
 ```js
 const bu = require("battery_util");
 
-bu.battery()
+bu.batteryData()
   .then((data) => {
     console.log(data.fullChargeCapacity); //(Example) 60800
   })
@@ -132,7 +132,7 @@ bu.battery()
 
 ## 📖 How it works
 
-With the help of [Child Process](https://www.npmjs.com/package/childprocess) package we can execute a powershell script and return data from it (Microsoft battery report)
+With the help of [Child Process](https://www.npmjs.com/package/childprocess) package we can execute a powershell commend and return data from it (Microsoft battery report)
 
 > Importing child process
 
@@ -144,19 +144,27 @@ const exec = require("child_process").exec;
 
 ```js
 const execute = (command, callback) => {
-  exec(command, (error, stdout, stderr) => {
-    callback(stdout);
+  exec(command, { shell: "powershell.exe" }, (error, stdout, stderr) => {
+    callback(stdout, stderr);
   });
 };
 ```
 
-> Exec command line with JS (Exec PS script)
+> Pscommend (powershell commend)
 
 ```js
-execute(
-  "powershell -executionpolicy bypass -File ./ps_script/battery.PS1",
-  (output) => {
-    console.log(output);
+const psCommend = `powercfg /batteryreport /XML /OUTPUT "./batteryreport.xml"; Start-Sleep 1; [xml]$b = Get-Content "./batteryreport.xml"; $b.BatteryReport.Batteries | ForEach-Object { ; [PSCustomObject]@{DesignCapacity = $_.Battery.DesignCapacity; FullChargeCapacity = $_.Battery.FullChargeCapacity; CycleCount = $_.Battery.CycleCount; Id = $_.Battery.id; SerialNumber = $_.Battery.SerialNumber } }`;
+```
+
+> Exec powershell command with JS
+
+```js
+execute(psCommend, (stdout, stderr) => {
+  if (
+    util.getValue(stdout.split("\r\n"), "designCapacity", ":") !== "" &&
+    util.getValue(stdout.split("\r\n"), "fullChargeCapacity", ":") !== ""
+  ) {
+    console.log(stdout);
     // output (Example)
     // fileSavedPath (batteryreport.xml path)
     // measureUnit : "mWh"
@@ -165,8 +173,12 @@ execute(
     // cycleCount : 0
     // id : DELL 9GRYT8A
     // serialNumber : 204
+  } else {
+    console.log(
+      `Error occurred while executing Powershell script.\n ${stderr}`
+    );
   }
-);
+});
 ```
 
 > Calculating battery health
@@ -204,7 +216,9 @@ package folder for (npm package) / test folder for (testing)
 ```sh
 npm run cli
 ```
+
 > Start testing
+
 ```sh
 npm test
 ```
