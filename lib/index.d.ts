@@ -2,7 +2,7 @@
 
 export namespace battery_util {
     // 1. Battery Data
-    interface BatteryData {
+    interface BatteryInfo {
         fileSavedPath: string,
         measureUnit: string
         designCapacity: number,
@@ -14,4 +14,4 @@ export namespace battery_util {
     }
 }
 
-export function batteryData(cb?: (data: battery_util.BatteryData) => any): Promise<battery_util.BatteryData>;
+export function batteryInfo(cb?: (data: battery_util.BatteryInfo) => any): Promise<battery_util.BatteryInfo>;
