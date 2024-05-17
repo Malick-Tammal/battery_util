@@ -85,7 +85,7 @@ get battery information
 ```js
 const bu = require("battery_util");
 
-bu.batteryData()
+bu.batteryInfo()
   .then(data => {
     console.log(data);
   })
@@ -109,7 +109,7 @@ get specific data
 ```js
 const bu = require("battery_util");
 
-bu.batteryData()
+bu.batteryInfo()
   .then(data => {
     console.log(data.fullChargeCapacity); //(Example) 60800
   })
