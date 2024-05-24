@@ -1,5 +1,15 @@
 # Changelog
 
+
+## Major release - Version 2
+
+> New features release
+
+## Features introduced
+
+- Adding batteryState() battery level | isCharging
+- More lightweight and reliable
+
 ## Major release - Version 1
 
 > initial release
@@ -16,6 +26,7 @@
 
 | Version |    Date   | Comment                                                     |
 | ------- | --------- | ----------------------------------------------------------- |
+|  2.1.4  | 2024-5-24 | Adding batteryState() battery level | isCharging            |
 |  1.1.4  | 2024-5-17 | Changing batteryData() to batteryInfo()                     |
 |  1.1.3  | 2024-5-02 | Making the code more reliable / adding better error handler |
 |  1.0.3  | 2024-4-26 | Deleting file shouldn't be there                            |

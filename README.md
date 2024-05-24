@@ -49,6 +49,7 @@
 
 - Get battery health (Accurate reads)
 - Get battery information (Serial number , Battery id , Capacity ..)
+- Battery realtime level
 - Lightweight and reliable
 
 ## 🚀 Features will added
@@ -56,7 +57,7 @@
 - Cross platform support
 - Getting laptop model
 - Getting Battery Model
-- Battery realtime level
+- Battery realtime level (added)
 - Estimated time for full charge
 - Estimated time to fully discharge
 
@@ -80,7 +81,7 @@ import the package
 const bu = require("battery_util");
 ```
 
-get battery information
+### Get battery information
 
 ```js
 const bu = require("battery_util");
@@ -104,7 +105,7 @@ bu.batteryInfo()
 // serialNumber : 204
 ```
 
-get specific data
+### Get specific data
 
 ```js
 const bu = require("battery_util");
@@ -115,7 +116,7 @@ bu.batteryInfo()
   })
   .catch(err => {
     console.log(err);
-  });
+});
 ```
 
 ### data options :
@@ -129,6 +130,53 @@ bu.batteryInfo()
 - id
 - serialNumber
 - more in the future ....
+
+### Get battery state
+
+```js
+const bu = require("battery_util");
+
+bu.batteryState()
+  .then(data => {
+    console.log(data);
+  }).catch(err => {
+    console.log(err);
+});
+```
+
+### Get battery state avery second
+
+```js
+const bu = require("battery_util");
+
+setInterval(() => {
+bu.batteryState()
+  .then(data => {
+    console.log(data);
+  }).catch(err => {
+    console.log(err);
+});
+}, 1000);
+```
+
+### Get specific data
+
+```js
+const bu = require("battery_util");
+
+bu.batteryState()
+  .then(data => {
+    console.log(data.level); // (Example) 78
+  }).catch(err => {
+    console.log(err);
+});
+```
+
+### data options :
+
+- level
+- isCharging
+
 
 ## 📖 How it works
 
