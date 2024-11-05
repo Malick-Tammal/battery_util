@@ -43,7 +43,7 @@
   </a>
 </p>
 
-> Battery util, get laptop battery information (health , capacity , serial number .....)
+> Battery util, get laptop battery information (health , capacity , serial number ...etc)
 
 ## 🌟 Features
 
@@ -142,6 +142,9 @@ bu.batteryState()
   }).catch(err => {
     console.log(err);
 });
+// output (Example)
+// level : 78
+// isCharging : true
 ```
 
 ### Get battery state avery second
@@ -157,6 +160,12 @@ bu.batteryState()
     console.log(err);
 });
 }, 1000);
+// output (Example)
+// { level: 78, isCharging: true }
+// { level: 78, isCharging: true }
+// { level: 79, isCharging: true }
+// { level: 79, isCharging: false }
+
 ```
 
 ### Get specific data
