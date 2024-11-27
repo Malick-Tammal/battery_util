@@ -1,2 +1,3 @@
 .npmignore
 batteryreport.xml
+node_modules
