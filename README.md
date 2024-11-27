@@ -76,9 +76,11 @@ npm i battery_util
 ### For developers
 
 ```sh
-  git clone https://github.com/Malick-Tammal/battery_util.git
-  cd battery_util
-  npm install
+git clone https://github.com/Malick-Tammal/battery_util.git
+
+cd battery_util
+
+npm install
 ```
 
 ## Usage
