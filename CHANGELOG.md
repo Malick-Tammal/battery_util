@@ -26,6 +26,8 @@
 
 | Version |    Date   | Comment                                                     |
 | ------- | --------- | ----------------------------------------------------------- |
+|  2.2.5  | 2024-11-27 | Fixing bug with in battery state in some laptops | 
+|  2.1.5  | 2024-10-29 | Fixing bug with in battery state function | 
 |  2.1.4  | 2024-5-24 | Adding batteryState() battery level | isCharging            |
 |  1.1.4  | 2024-5-17 | Changing batteryData() to batteryInfo()                     |
 |  1.1.3  | 2024-5-02 | Making the code more reliable / adding better error handler |
